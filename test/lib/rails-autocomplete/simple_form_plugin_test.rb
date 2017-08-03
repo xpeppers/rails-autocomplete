@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'view_test_helper'
 
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   class SimpleFormPluginTest < ActionView::TestCase
 
     should "apply a class of 'autocomplete'" do

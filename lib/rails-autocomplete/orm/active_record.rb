@@ -1,4 +1,4 @@
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   module Orm
     module ActiveRecord
       def active_record_get_autocomplete_order(method, options, model=nil)

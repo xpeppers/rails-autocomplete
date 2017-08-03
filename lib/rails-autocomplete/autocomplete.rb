@@ -1,12 +1,8 @@
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   module Autocomplete
     def self.included(target)
-      target.extend RailsJQueryAutocomplete::Autocomplete::ClassMethods
-
-      target.send :include, RailsJQueryAutocomplete::Orm::Mongoid if defined?(Mongoid::Document)
-      target.send :include, RailsJQueryAutocomplete::Orm::MongoMapper if defined?(MongoMapper::Document)
-      target.send :include, RailsJQueryAutocomplete::Orm::ActiveRecord
-
+      target.extend RailsAutocomplete::Autocomplete::ClassMethods
+      target.send :include, RailsAutocomplete::Orm::ActiveRecord
     end
 
     #
@@ -41,9 +37,7 @@ module RailsJQueryAutocomplete
       def autocomplete(object, method, options = {}, &block)
 
         define_method("get_prefix") do |model|
-          if defined?(Mongoid::Document) && model.include?(Mongoid::Document)
-            'active_record'
-          end
+          'active_record'
         end
 
         define_method("get_autocomplete_order") do |method, options, model=nil|
@@ -63,7 +57,7 @@ module RailsJQueryAutocomplete
             #allow specifying fully qualified class name for model object
             class_name = options[:class_name] || object
             items = get_autocomplete_items(:model => get_object(class_name), \
-              :options => options, :term => term, :method => method)
+                                           :options => options, :term => term, :method => method)
           else
             items = {}
           end

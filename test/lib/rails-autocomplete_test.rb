@@ -1,7 +1,7 @@
 require 'test_helper'
 
-module RailsJQueryAutocomplete
-  class RailsJQueryAutocompleteTest < ActionController::TestCase
+module RailsAutocomplete
+  class RailsAutocompleteTest < ActionController::TestCase
     ActorsController = Class.new(ActionController::Base)
     ActorsController.autocomplete(:movie, :name)
 

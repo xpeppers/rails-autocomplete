@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'launchy'
 gem 'nifty-generators'
 gem 'pickle'
-gem 'rails-jquery-autocomplete', :path => '../'
+gem 'rails-autocomplete', :path => '../'
 gem 'simple_form'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 

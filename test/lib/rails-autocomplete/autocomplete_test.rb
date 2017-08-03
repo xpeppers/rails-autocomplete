@@ -1,8 +1,8 @@
 require 'test_helper'
 
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   class AutocompleteTest < Test::Unit::TestCase
-    include RailsJQueryAutocomplete::Autocomplete
+    include RailsAutocomplete::Autocomplete
 
     context 'ClassMethods' do
       context '#autocomplete' do

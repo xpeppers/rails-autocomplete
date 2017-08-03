@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "rails-jquery-autocomplete/version"
+require "rails-autocomplete/version"
 
 Gem::Specification.new do |s|
   s.name = %q{rails-autocomplete}
-  s.version = RailsJQueryAutocomplete::VERSION
+  s.version = RailsAutocomplete::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ["David Padilla", "Joiey Seeley", "Sundus Yousuf", "XPeppers"]
   s.email = %q{david@padilla.cc joiey.seeley@gmail.com sundusahmedyousuf@gmail.com orione-team@xpeppers.com}
-  s.homepage = %q{https://github.com/xpeppers/rails-jquery-autocomplete/}
   s.summary = %q{Use jQuery's autocomplete plugin with Rails 4+.}
+  s.homepage = %q{https://github.com/xpeppers/rails-jquery-autocomplete/}
   s.description = %q{Use jQuery's autocomplete plugin with Rails 4+.}
   s.license = %q{MIT}
 

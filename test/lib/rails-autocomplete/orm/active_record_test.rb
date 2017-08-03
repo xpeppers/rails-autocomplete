@@ -1,9 +1,9 @@
 require 'test_helper'
 
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   module Orm
     class ActiveRecordTest < Test::Unit::TestCase
-      include RailsJQueryAutocomplete::Orm::ActiveRecord
+      include RailsAutocomplete::Orm::ActiveRecord
 
       context "#get_autocomplete_order" do
         context 'order is specified' do

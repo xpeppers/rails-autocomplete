@@ -10,7 +10,7 @@ class FormHelperTest < ActionView::TestCase
   end
 
   def test_text_field
-    post = Post.new
+    Post.new
     assert_match(/autocomplete=\"some\/path\"/, text_field(:post, :author, :autocomplete => 'some/path'))
   end
 
@@ -19,7 +19,7 @@ class FormHelperTest < ActionView::TestCase
   end
 
   def test_autocomplete_field
-    post= Post.new
+    Post.new
     assert_match(/data-autocomplete=\"some\/path\"/, autocomplete_field(:post, :author, 'some/path'))
   end
 end

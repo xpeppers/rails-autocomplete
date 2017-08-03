@@ -16,18 +16,18 @@ require 'rails/all'
 require 'shoulda'
 require 'rr'
 require 'rails/test_help'
-require 'rails-jquery-autocomplete'
+require 'rails-autocomplete'
 
-module RailsJQueryAutocomplete
+module RailsAutocomplete
   class Application < ::Rails::Application
   end
 end
 
-RailsJQueryAutocomplete::Application.routes.draw do
+RailsAutocomplete::Application.routes.draw do
   match '/:controller(/:action(/:id))', via: [:get, :post]
 end
 
-ActionController::Base.send :include, RailsJQueryAutocomplete::Application.routes.url_helpers
+ActionController::Base.send :include, RailsAutocomplete::Application.routes.url_helpers
 
 class Test::Unit::TestCase
 
