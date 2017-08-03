@@ -1,17 +1,10 @@
 ## Status
 
-1. This is the officially maintained fork of
-   [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete)
-2. All new features and support of Rails 4 and above will occur here
-   going forward.  Rails 3 is also supported on this fork; bug fixes and security fixes for Rails 3 will continue until Rails 3 is EOL.
-
-# rails-jquery-autocomplete
-
-[![Build Status](https://secure.travis-ci.org/bigtunacan/rails-jquery-autocomplete.png)](http://travis-ci.org/bigtunacan/rails-jquery-autocomplete) [![Gem Version](https://badge.fury.io/rb/rails-jquery-autocomplete.png)](http://badge.fury.io/rb/rails-jquery-autocomplete)
+This is a maintained fork of [rails-jquery-autocomplete](http://github.com/bigtunacan/rails-jquery-autocomplete)
 
 An easy way to use jQuery's autocomplete with Rails.
 
-Supports both ActiveRecord, [mongoid](https://github.com/mongodb/mongoid), and [MongoMapper](https://github.com/jnunemaker/mongomapper).
+Supports ActiveRecord only.
 
 Works with [Formtastic](http://github.com/justinfrench/formtastic)
 and [SimpleForm](https://github.com/plataformatec/simple_form)
@@ -20,11 +13,6 @@ and [SimpleForm](https://github.com/plataformatec/simple_form)
 
 You can find a [detailed example](http://github.com/crowdint/rails3-jquery-autocomplete-app)
 on how to use this gem with ActiveRecord [here](http://github.com/crowdint/rails3-jquery-autocomplete-app).
-
-## MongoID
-
-You can find a [detailed example](http://github.com/crowdint/rails3-jquery-autocomplete-app/tree/mongoid)
-on how to use this gem with MongoID [here](http://github.com/crowdint/rails3-jquery-autocomplete-app/tree/mongoid). (Same thing, different branch)
 
 ## Before you start
 
@@ -43,21 +31,11 @@ I'd encourage you to understand how to use those 3 amazing tools before attempti
 
 Include the gem on your Gemfile
 
-    gem 'rails-jquery-autocomplete'
+    gem 'rails-autocomplete'
 
 Install it
 
     bundle install
-
-### Rails < 4.x.x
-
-Run the generator
-
-    rails generate autocomplete:install
-
-And include autocomplete-rails.js on your layouts
-
-    javascript_include_tag "autocomplete-rails.js"
 
 #### Upgrading from older versions
 
@@ -433,8 +411,6 @@ And then, install all your dependencies:
     bundle install
 
 ## Running the test suite
-
-<strike>You need to have an instance of MongoDB running on your computer or all the mongo tests will fail miserably.</strike>
 
 To run all the tests once, simply use
 

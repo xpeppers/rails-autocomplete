@@ -42,13 +42,10 @@ module RailsJQueryAutocomplete
 
         define_method("get_prefix") do |model|
           if defined?(Mongoid::Document) && model.include?(Mongoid::Document)
-            'mongoid'
-          elsif defined?(MongoMapper::Document) && model.include?(MongoMapper::Document)
-            'mongo_mapper'
-          else
             'active_record'
           end
         end
+
         define_method("get_autocomplete_order") do |method, options, model=nil|
           method("#{get_prefix(get_object(options[:class_name] || object))}_get_autocomplete_order").call(method, options, model)
         end
@@ -58,7 +55,6 @@ module RailsJQueryAutocomplete
         end
 
         define_method("autocomplete_#{object}_#{method}") do
-
           method = options[:column_name] if options.has_key?(:column_name)
 
           term = params[:term]
@@ -88,7 +84,7 @@ module RailsJQueryAutocomplete
     #   # returns a Actor constant supposing it is already defined
     #
     def get_object(model_sym)
-      object = model_sym.to_s.camelize.constantize
+      model_sym.to_s.camelize.constantize
     end
 
     #
