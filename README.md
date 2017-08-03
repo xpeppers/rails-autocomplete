@@ -37,14 +37,6 @@ Install it
 
     bundle install
 
-#### Upgrading from older versions
-
-If you are upgrading from a previous version, run the generator after installing to replace the javascript file.
-
-    rails generate autocomplete:install
-
-I'd recommend you do this every time you update to make sure you have the latest JS file.
-
 #### Uncompressed Javascript file
 
 If you want to make changes to the JS file, you can install the
@@ -56,9 +48,9 @@ uncompressed version by running:
 
 Just add it to your app/assets/javascripts/application.js file
 
-    //= require jquery
+    //= require jquery3
     //= require jquery_ujs
-    //= require jquery-ui/autocomplete
+    //= require jquery-ui/widgets/autocomplete
     //= require autocomplete-rails
 
 ## Usage
