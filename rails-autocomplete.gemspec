@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors = ["David Padilla", "Joiey Seeley", "Sundus Yousuf", "XPeppers"]
   s.email = %q{david@padilla.cc joiey.seeley@gmail.com sundusahmedyousuf@gmail.com orione-team@xpeppers.com}
   s.summary = %q{Use jQuery's autocomplete plugin with Rails 4+.}
-  s.homepage = %q{https://github.com/xpeppers/rails-jquery-autocomplete/}
+  s.homepage = %q{https://github.com/xpeppers/rails-autocomplete/}
   s.description = %q{Use jQuery's autocomplete plugin with Rails 4+.}
   s.license = %q{MIT}
 
