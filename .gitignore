@@ -32,7 +32,7 @@ tmp
 Gemfile.lock
 
 tags
-rails-jquery-autocomplete-*.gem
+rails-autocomplete-*.gem
 
 .ruby-gemset
 .ruby-version
