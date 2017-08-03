@@ -5,9 +5,7 @@ module RailsAutocomplete
   autoload :Orm              , 'rails-autocomplete/orm'
   autoload :FormtasticPlugin , 'rails-autocomplete/formtastic_plugin'
 
-  unless ::Rails.version < "3.1"
-    require 'rails-autocomplete/rails/engine'
-  end
+  require 'rails-autocomplete/rails/engine'
 end
 
 class ActionController::Base
